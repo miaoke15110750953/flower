@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+		<link rel="stylesheet" href="index.css">
+ <style>
+	*{margin:0;padding:0;}
+	  /*整体内容边框*/
+	.body{width:1263px;height:100%;
+		   margin:0 auto;
+		}
+	  /*通用属性*/
+	li{list-style:none;
+	}
+	a{
+		  font-size:13px;
+		  color:#000;
+		  text-decoration:none;
+	}
+	.title{
+	  width:1263px;height:35px;
+		float:left;
+		
+	}
+	  /*列表浮动*/
+	.title>div>ul>li{  
+    float:left;
+		padding-left:7px;
+		}
+	  /*div与body的左边距*/
+	.title1{
+	  width:400px;height:34px;
+	  margin-left:35px;
+	    }
+	.title2{
+	  width:745px;height:34px;
+		margin-top:-35px;margin-left:473px;
+	}
+	  /*a标签后面的小图标*/
+    .favorite{
+		width:25px;height:20px;
+		display:inline-block;
+		background:url(img/common_z.png) no-repeat 4px -317px;
+		margin-bottom:-2px;
+		}
+	.wechart{
+		width:25px;height:23px;
+		display:inline-block;
+    background:url(img/common_z.png) no-repeat -374px -132px;
+		margin-bottom:-6px;
+		}
+	.huali{
+	    width:17px;height:21px;
+		display:inline-block;
+		background:url(img/common_z.png) no-repeat -296px -171px;
+		margin-bottom:-4px;
+	  }
+	.login{margin-left:25px;}
+	.kehufw{
+       width:25px;height:25px;
+       display:inline-block;
+	   background:url(img/common_z.png) no-repeat -177px -314px;
+	   margin-bottom:-8px;
+	  }
+	  /*鼠标悬浮a标签时显示的内容颜色*/
+	a:hover{
+	    color:#f00;
+	  }
+	  /*隐藏下拉框的属性*/
+	.hidden{
+	   width:91px;height:167px;
+	   background:#fff;
+	   border:1px solid #d9e0e9;
+	   margin-left:-7px;
+		 margin-top:12px;
+	   background-color:#fff;
+	  }
+	  /*有下拉框的列表隐藏*/
+    .visible{
+	   visibility:hidden;
+	  }
+	  /*有下拉框的列表第一个a标签显示*/
+	.visible>a:first-child{
+	   visibility:visible;
+	  }
+	  /*鼠标悬停有下拉框的列表时显示*/
+	.visible:hover{
+	   visibility:visible;
+	  }
+	  /*调整隐藏下拉框中a标签在div中的位置*/
+	.hidden>a{
+      display:inline-block;
+      padding:6px 15px;
+	  }
+	  /*购物车列表*/
+	.shopping{
+	  visibility:hidden;
+	  }
+	  /*购物车小图标*/
+	.shoppingcar{
+	  width:35px;height:25px;
+	  display:inline-block;
+	  background:url(img/common_z.png) no-repeat -340px -284px;
+    margin-bottom:-8px;
+	  }
+	  /*购物车下拉框*/
+	.shopping-car-down{
+	  width:332px;height:122px;
+	  background-color:#fff;
+	  border:1px solid #d9e0e9;
+	  margin-left:-204px;
+		margin-top:12px;
+    text-align:center;
+	  line-height:111px;
+	  }
+	  /*购物车显示的a标签*/
+	.shopping-car{
+	  visibility:visible;
+	  }
+    .shopping:hover{
+	  visibility:visible;
+	}
+	.top-nav{
+	  height:160px;width:100%;
+	  border-top:1px solid #d9e0e9;
+	  margin:0 auto;
+	  margin-top:32px;
+	}
+	.top1-nav{
+	  width:1200px;height:120px;
+	  margin:0 auto;
+	}
+	.top-nav-left{
+	  float:left;
+	  width:500px;height:118px;
+	}
+	.top-nav-left1{
+	  transform:scaleY(1.3);
+	}
+	.top-nav-left2{
+	  margin-top:25px;
+	  border-left:2px solid #d9d9d9;
+		display:inline-block;
+		width:150px;height:38px;
+		padding-top:18px;
+		background:url(img/common_z.png) no-repeat -285px 7px;
+	}
+	.top-nav-conter{
+	  float:left;
+	  width:320px;height:68px;
+		margin-top:42px;
+	}
+	.top-serch{
+	 width:320px;height:34px;
+	 border:0px solid rgb(255,106,0);
+	 border-right:none;
+	}
+  .top-serch>input{
+	 width:234px;height:35px;
+	 box-sizing:border-box;
+	 outline:none;
+	 border:1px solid rgb(255,106,0);
+	 padding:7px;
+	}
+	.top-serch>span{
+	 display:inline-block;
+	 background:rgb(255,106,0);
+     width:85px;
+	 height:35px;
+     margin-left:-5px;
+	 line-height:31px;
+	 text-align:center;
+	}
+	.top-nav-conter>div>ul>li{
+	 float:left;
+	}
+	.top-serch+div{
+	 width:320px;
+	 height:24px;
+	}
+    .top-nva-right{
+	 float:right;
+	 width:255px;
+	 height:31px;
+     margin-top:47px;
+
+	}
+    .phone{
+	 display:inline-block;
+	 width:30px;
+	 height:30px;
+	 background:url(img/common_z.png) no-repeat -380px -49px;
+	 margin-bottom:-13px;
+	}
+	.with{
+	display:inline-block;
+	width:30px;
+	height:24px;
+	background:url(img/common_z.png) no-repeat -294px -133px;
+	margin-bottom:-5px;
+	}
+  </style>
+ </head>
+ <body>
+    <!--全局div--> 
+  <div class="body">
+    <!--顶部图片div-->
+      <div>
+		    <a href="#">
+			   <img src="img/banner_top.jpg">
+			  </a>
+	    </div>
+	  <!--上边导航栏div-->
+    <div class="title">
+	  <!--导航栏左侧div-->
+    <div class="title1">
+      <ul>
+      	<li>
+          <a href="#">
+					  <span class="favorite"> 
+						</span>
+					  收藏鲜花网(hua.com)
+					</a>
+				</li>
+      	<li>
+				  <a href="#">
+					  <span class="wechart"></span>
+					  关注微信
+					</a>
+				</li>
+      	<li>
+				  <a href="#">
+					  <span class="huali"></span>
+					  花礼网
+					</a>
+				</li>
+      </ul>
+	  </div>
+	  <!--导航栏右侧div-->
+	 <div class="title2">
+		  <ul>
+		  	<li class="login">
+				<a href="#">你好，请登录</a>
+			</li>
+			<li>
+				<a href="#"> 注册 |</a>
+			</li>
+		  	<li>
+				<a href="#">订单查询 |</a>
+			</li>
+		  	<li>
+				<a href="#">我的花礼 |</a>
+			</li>
+		  	<li class="visible">
+				<a href="#">客户服务
+				  <span class="kehufw"></span> |
+				</a>
+				<div class="hidden">
+				  <a href="#">在线付款</a>
+				  <a href="#">帮助中心</a>
+				  <a href="#">售后服务</a>
+				  <a href="#">配送范围</a>
+				  <a href="#">留言反馈</a>
+				</div>
+			</li>
+		  	<li class="shopping">
+				<a href="#" class="shopping-car">
+				<span class="shoppingcar"></span>购物车 (0) 
+				  <span class="kehufw"></span> |
+				</a>
+				<div class="shopping-car-down">
+				  您还没有选购任何商品,
+				  <a href="#">请您先选购商品</a>
+				</div>
+			</li>
+		  	<li>
+				<a href="#">中国鲜花礼品网：中国花网领先品牌</a>
+			</li>
+		  </ul>
+      </div>	
+	 </div>
+	<div class="top-nav">
+	   <div class="top1-nav">
+		   <div class="top-nav-left">
+			   <img class="top-nav-left1" src="img/logo.png">
+				 <span class="top-nav-left2">
+				 </span>
+			 </div>
+		   <div class="top-nav-conter">
+			  <div class="top-serch">
+			   <input type="serch" placeholder="商品关键字">
+				 <span>搜索</span>
+				</div>
+				<div>
+          <ul>
+          	<li>
+          		<a href="#">重阳节 |</a>
+          	</li>
+          	<li>
+          		<a href="#">红玫瑰 |</a>
+          	</li>
+          	<li>
+          		<a href="#">永生花 |</a>
+          	</li>
+          	<li>
+          		<a href="#">生日鲜花 |</a>
+          	</li>
+						<li>
+          		<a href="#">礼品卡</a>
+          	</li>
+          </ul>
+			  </div>
+				</div>
+		    <div class="top-nva-right">
+				   <i class="phone"></i>
+				   <span>400-889-8188 |</span>
+			       <i class="with"></i>
+			       <span>在线客服</span>
+			</div>
+		 </div>
+	</div> 
+
+
+  </div>
+ </body>
+</html>
