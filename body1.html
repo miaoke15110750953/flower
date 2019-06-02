@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+	<style>
+	*{margin:0px;padding:0px;}
+	    .body-title{
+	      width:1200px;height:40px;
+		  margin:0 auto;
+		}
+	    .body-title>ul>li{
+          float:left;list-style:none;
+		  width:206px;height:40px;
+		  margin-right:30px;
+			}
+        .body-title>ul>li>span{
+			float:left;
+			width:40px;
+			height:40px;
+			display:inline-block;
+			}
+		.body_title-1{
+			float:left;
+			display:inline-block;
+		    width:206px;
+			height:40px;
+			margin-left:50px;
+			margin-top:-38px;
+			}
+		.body-title>ul>li>a>h4{
+			float:left;
+			color:rgb(50,50,50);
+			}
+		.body-title>ul>li>a>p{
+			float:left;
+            font-size:13px;
+			color:rgb(153,153,153);
+			}
+        .body-title-1{
+			background:url(img/common_z.png) no-repeat -244px -100px;
+			}
+		.body-title-2{
+			background:url(img/common_z.png) no-repeat -244px -50px;
+			}
+		.body-title-3{
+			background:url(img/common_z.png) no-repeat -244px 0px;
+			}
+		.body-title-4{
+			background:url(img/common_z.png) no-repeat -150px -184px;
+			}
+    	.body-title-5{
+			background:url(img/common_z.png) no-repeat -100px -184px;
+			}
+		.body_img{
+			display:flex;
+			justify-content:center;
+			margin-top:50px;
+			}
+        .body_img>li{
+			display:inline-block;
+			width:238px;
+			height:198px;
+			border:1px solid #e5e5e5;
+			}
+		.body_img>li:first-child{
+			background-color:#AACC03;
+			}
+        .body_img>li>span{
+			display:block;
+			width:70px;height:70px;
+			background-color:#000;
+			background:url(img/common_z.png) no-repeat;
+			margin:50px auto;
+			}
+		h3{color:#fff;
+			float:left;
+			margin-left:76px;
+			margin-top:-42px;
+			}
+		.body_img>li:last-child{
+		  overflow:hidden;
+		}
+		.dongtai{
+          display:block;
+    	  width:238px;height:198px;
+          transition:transform 1s;
+          background:url(img/comic_choose_flowers.jpg) no-repeat;
+			}
+		.dongtai:hover{
+          transform:scale(1.1);
+			}
+	    .love-flower{
+		  width:1200px;height:676px;
+		  margin:0 auto;
+		  margin-top:60px;
+		}
+		.love-flower-title{
+		  width:1180px;height:22px; 
+		}
+		a>h4{
+		  float:left;
+		  color:rgb(50,50,50);
+		}
+		.love-flower-title>p{
+		  float:left;
+		  margin-left:25px;
+		  font-size:13px;
+		  color:rgb(153,153,153);
+		}
+		.love-more-title{
+		  text-decoration:none;
+		  font-size:15px;
+		  float:right;
+		  color:rgb(153,153,153);
+		}
+		.love-more-title:hover{
+		  font-size:15px;
+		  float:right;
+		  color:#dc6612;
+		}
+		.love-flower>div:nth-child(2){
+		  width:243px;height:639px;
+			background:#ffc0bb;
+		}		  
+		.love-flower>div:nth-child(2)>div>a{
+		    display:inline-block;
+			width:190px;height:48px;
+			border:1px solid #fff;
+            color:#fff;
+			text-decoration:none;
+            text-align:center;
+			line-height:45px;
+            margin:59px 24px;
+		}
+		.lage-img{
+		  float:left;
+		}
+		.flower-img{
+		  float:left;
+		  width:957px;height:638px;
+	    }
+		.flower-img>ul{
+		  display:flex;
+		}
+		.flower-img>ul>li{
+			display:inline-block;
+		  list-style:none;
+		}
+    .flower-img>ul>li>a{
+		  display:inline-block;
+		  width:240px;height:320px;
+		  text-decoration:none;
+		  font-size:12px;
+		  color:#737373;
+		  text-align:center;
+		  vertical-align:middle;
+		  border:1px solid #e5e5e5;
+			box-sizing:border-box;
+		}
+    .flower-img>ul>li>a>img{
+		  width:220px;height:240px;
+		  margin:9px;
+		}
+    .flower-img>ul>li>a>p{
+		  text-align:center;
+		}
+	.cake-title{
+	    width:1180px;height:22px;
+		margin:0 auto;
+	}
+	.cake-title>div{
+	   display:inline-block;
+	   width:33%;
+	}
+	.cake-title>div:nth-child(2)>p{
+	  display:inline-block;
+	}
+	.cake-title>div:nth-child(3)>a{
+	  float:right;
+	}
+	.cake-title>div>p{
+	  font-size:12px;
+	  color:rgb(100,100,100);
+	}
+	.cake-city:{position:relative;}
+	.cake-hidden{
+	  position:absolute;
+	  border:2px solid rgb(255,106,0);
+	  text-align:center;
+	  visibility:hidden;
+	}
+	.cake-title>div>a,
+	.cake-hidden>a
+	{
+	  text-decoration:none;
+	  color:rgb(100,100,100)
+	}
+	.cake-hidden>a{
+	  display:block;
+	  margin-left:65px;
+	}
+	.cake-hidden>p{
+	 color:rgb(100,100,100)
+	}
+	.cake-hidden>p:nth-child(2){
+	  background-color:rgb(200,200,200);
+	}
+	.cake-hidden>input{
+	  display:inline-block;
+	  width:285px;height:30px;
+	  margin-bottom:5px;
+	}
+	</style>
+ </head>
+ <body>
+   <!--  头部标题    -->
+    <div class="body-title">
+		<ul>
+		  	<li>
+				<span class="body-title-1"></span>
+				<a class="body_title-1" href="#">
+					<h4>鲜花电商龙头</h4>
+					<p>销量领先，权威认证龙头企业</p>
+				</a>
+			</li> 
+	  	    <li>
+				<span class="body-title-2"></span>
+				<a href="#" class="body_title-1">
+					<h4>12年品牌 真实口碑</h4>
+					<p>最近评价225747条</p>
+				</a>
+			</li>
+ 		  	<li>
+				<span class="body-title-3"></span>
+				<a href="#" class="body_title-1">
+					<h4>鲜花实拍秀展示</h4>
+					<p>展现送前实拍的鲜花网</p>
+				</a>
+			</li>
+ 		  	<li>
+				<span class="body-title-4"></span>
+				<a href="#" class="body_title-1">
+					<h4>3小时送花</h4>
+					<p>全国连锁，3小时送1000城市</p>
+				</a>
+			</li> 
+            <li>
+				<span class="body-title-5"></span>
+			    <a href="#" class="body_title-1">
+					<h4>200%退货赔偿承诺</h4>
+					<p>可靠的售后保障</p>
+				</a>
+			</li>
+ 		</ul> 
+	  </div>
+<!-- 鲜花推送  -->
+	<div>
+		  <ul class="body_img">
+		  	<li>
+				  <span></span>
+				  <h3>限时推荐</h3>	
+				</li>
+		  	<li>
+				  <a href="#">
+					  <img src="img/xianshi_1_170927.jpg" alt="">
+					</a>
+				</li>
+		  	<li>
+				  <a href="#">
+					  <img src="img/xianshi_2_170927.jpg" alt="">
+					</a>
+				</li>
+		  	<li>
+				  <a href="#">
+					  <img src="img/xianshi_3_170912.jpg" alt="">
+					</a>
+				</li>
+		  	<li>
+				  <a href="#">
+					  <span class="dongtai"></span>
+					</a>
+				  
+				</li>
+		  </ul>
+	</div>
+  <!-- 鲜花主体 -->
+    <div class="love-flower">
+	    <div class="love-flower-title">
+		    <a href="#">
+		       <h4>爱情鲜花</h4>
+		    </a>
+			  <p>送·让你怦然心动的人</p>
+			  <a href="#" class="love-more-title">更多爱情鲜花&gt&gt</a>
+		  </div>
+		  <div class="lage-img">
+		    <img src="img/banner_love.jpg" alt="">
+		    <div>
+		      <a href="#">爱情鲜花专区>></a>
+		    </div>
+		  </div>
+			<div class="flower-img">
+			  <ul>
+				  <li>
+				    <a href="#">
+             	<img src="img/9010011.jpg_220x240.jpg" alt="">
+						  <p>鲜花·一心一意<p>
+						  <p>￥126</p>
+					  </a>
+				  </li>
+				  <li>
+				    <a href="#">
+              <img src="img/9012011.jpg_220x240.jpg" alt="">
+						  <p>鲜花·阳光海岸<p>
+						  <p>￥218</p>
+					  </a>
+				  </li>
+				  <li>
+				    <a href="#">
+             	<img src="img/9010966.jpg_220x240.jpg" alt="">
+						  <p>鲜花·一往情深<p>
+						  <p>￥235</p>
+					  </a>
+				  </li>
+				  <li>
+				    <a href="#">
+             	<img src="img/9012042.jpg_220x240.jpg" alt="">
+						  <p>鲜花·热恋<p>
+						  <p>￥359</p>
+					  </a>
+				  </li>
+					</ul>
+				<ul>
+				  <li>
+				    <a href="#">
+             	<img src="img/9010947.jpg_220x240.jpg" alt="">
+						  <p>鲜花·真爱如初<p>
+						  <p>￥186</p>
+					  </a>
+				  </li>
+				  <li>
+				    <a href="#">
+             	<img src="img/9012177.jpg_220x240.jpg" alt="">
+						  <p>鲜花·不变的承诺<p>
+						  <p>￥519</p>
+					  </a>
+				  </li>
+				  <li>
+				    <a href="#">
+             	<img src="img/9012009.jpg_220x240.jpg" alt="">
+						  <p>鲜花·忘情巴黎<p>
+						  <p>￥290</p>
+					  </a>
+				  </li>
+				  <li>
+				    <a href="#">
+             	<img src="img/9012247.jpg_220x240.jpg" alt="">
+						  <p>鲜花·幸福的约定<p>
+						  <p>￥339</p>
+					  </a>
+				  </li>
+			  </ul>
+			</div>
+		</div>
+	</div>
+	<div class="cake-title">
+        <div class="cake">
+    	    <a href="#"> <h4>蛋糕</h4></a>
+		    <p> 一起品味甜蜜时光 </p>
+	    </div>  
+    	<div class="cake-city">
+		  <p>当前城市：</p>
+		  <a href="#">请选择 ▽</a>
+		  <p>【请选择蛋糕配送城市】</p>
+    	  <div class="cake-hidden">
+	      <p>请选择或输入蛋糕要配送的城市</p>
+	      <p>热门城市</p> 
+	      <a href="#">
+	      <table>
+	        <tr>
+	    	  <td>北京</td>
+	    	  <td>上海</td>
+	    	  <td>深圳</td>
+	    	  <td>广州</td>
+	    	  <td>天津</td>
+	        </tr>
+	        <tr>
+	    	  <td>重庆</td>
+	    	  <td>成都</td>
+	    	  <td>沈阳</td>
+	    	  <td>武汉</td>
+	    	  <td>西安</td>
+	        </tr>
+	        <tr>
+	    	  <td>杭州</td>
+	    	  <td>南京</td>
+	    	  <td>合肥</td>
+	    	  <td>郑州</td>
+	    	  <td>长沙</td>
+	        </tr>
+	        <tr>
+	    	  <td>南昌</td>
+	    	  <td>哈尔滨</td>
+	    	  <td>苏州</td>
+	    	  <td>长春</td>
+	    	 <td>宁波</td>
+	        </tr>
+	        <tr>
+	    	  <td>青岛</td>
+	    	  <td>济南</td>
+	    	  <td>厦门</td>
+	    	  <td>福州</td>
+	    	  <td>昆明</td>
+	        </tr>
+	        <tr>
+	    	  <td>贵阳</td>
+	    	  <td>南宁</td>
+	    	  <td>石家庄</td>
+	    	  <td>海口</td>
+	    	  <td>太原</td>
+	        </tr>
+	        <tr>
+	    	  <td>兰州</td>
+	    	  <td>乌鲁木齐</td>
+	    	  <td>唐山</td>
+	    	  <td>呼和浩特</td>
+	    	  <td>东莞</td>
+	        </tr>
+	        <tr>
+	    	  <td>佛山</td>
+	    	  <td>无锡</td>
+	    	  <td>宁波</td>
+	    	  <td>温州</td>
+	    	  <td>常州</td>
+	        </tr>
+	      </table>
+	      </a>
+          <input type="text" placeholder="请输入配送城市">
+		</div>
+		</div>
+        <div><a href="#">更多蛋糕>></a></div>
+	</div>
+	<div>
+	
+	</div>	
+ </body> 
+ </html> 
+
