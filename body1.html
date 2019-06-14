@@ -182,12 +182,24 @@
 	  font-size:12px;
 	  color:rgb(100,100,100);
 	}
-	.cake-city:{position:relative;}
+	.cake-city{
+	  position:relative;
+	  visibility:hidden;
+	} 
+	.cake-city:hover{
+	  visibility:visible;
+	} 
+	.cake-city>a,
+	.cake-city>p{
+	  visibility:visible;
+	}
 	.cake-hidden{
 	  position:absolute;
 	  border:2px solid rgb(255,106,0);
 	  text-align:center;
-	  visibility:hidden;
+	  width:400px;
+	  height:380px;
+	  background-color:#fff;
 	}
 	.cake-title>div>a,
 	.cake-hidden>a
@@ -196,19 +208,226 @@
 	  color:rgb(100,100,100)
 	}
 	.cake-hidden>a{
-	  display:block;
-	  margin-left:65px;
+	  margin-top:23px;
+      display:block;
+	}
+	.cake-hidden>a>table{
+	  width:400px;
+	  font-size:15px;
 	}
 	.cake-hidden>p{
-	 color:rgb(100,100,100)
+	 margin-top:10px;
 	}
 	.cake-hidden>p:nth-child(2){
 	  background-color:rgb(200,200,200);
 	}
 	.cake-hidden>input{
 	  display:inline-block;
-	  width:285px;height:30px;
-	  margin-bottom:5px;
+	  width:300px;height:28px;
+      margin-top:60px;
+	}
+	.cake-img{
+	  width:1200px;
+	  height:676px;
+	  margin:0 auto;
+	  margin-top:30px;
+	}
+    .cake-img-title{
+	  width:243px;
+	  height:639px;
+	  float:left;
+	  position:relative;
+	}
+	.cake-img-title>a:first-child{
+	  display:block;
+	  width:243px;
+	  height:320px;
+	}
+    .cake-img-title>a:nth-child(2){
+	  display:inline-block;
+	  position:absolute;
+	  width:223px;
+	  height:64px;
+	  text-align:center;
+	  margin-left:9px;
+	  background-color:#754c40;
+	  line-height:64px;
+	  top:240px;
+	  border:2px solid #fff;
+	  color:#fff;
+	  font-size:20px;
+	  text-decoration:none;
+	  border-radius:5%;
+	}
+	.cake-left-city{
+	  border:1px solid rgb(217,217,217);
+	}
+	.cake-left-city>span:first-child{
+	  display:inline-block;
+	  width:216px;
+	  height:111px;
+	  margin-left:12px;
+	  margin-right:12px;
+	  margin-top:10px;
+	  border-bottom:1px solid rgb(217,217,217);
+	}
+    .cake-left-city>span>p{
+	  color:rgb(255,106,0)
+	}
+	.cake-left-city>span>a{
+	  display:inline-block;
+	  text-decoration:none;
+	  font-size:12px;
+	  color:rgb(115,115,115);
+	  margin-right:5px;
+	  padding-top:8px;
+	}
+    .cake-left-city>span:nth-child(2){
+	  display:inline-block;
+	  width:217px;
+	  height:161px;
+	  margin-left:12px;
+	  margin-bottom:23px;
+	  margin-top:10px;
+	}
+    .cake-left-city>span>a:hover{
+	  color:rgb(255,106,0);
+      text-decoration:underline;
+	}
+	.cake-jpg{
+	  float:left;
+	  width:957px;
+	  height:638px;
+	}
+    .cake-jpg>a{
+	text-decoration: none;
+	}
+	.cake-jpg>a>ul{
+	  display:flex;
+	}
+	.cake-jpg>a>ul>li{
+      display: inline-block;
+	  float:left;
+      width: 240px;
+      height: 320px;
+	  list-style:none;
+      font-size: 12px;
+      color: #737373;
+      text-align: center;
+      vertical-align: middle;
+      border: 1px solid #e5e5e5;
+      box-sizing: border-box;
+	}
+	.evaluate-title{
+	  width:1200px;
+	  height:292px;
+	  margin:0 auto;
+	  display:flex;
+	}
+	.evaluate-left{
+	  width:240px;
+	  height:292px;
+	  background-color:#f2f2f2;
+	}
+    .evaluate-left>h5,
+	.evaluate-center>h5,
+	.evaluate-right>h5{
+	  display:inline-block;
+	  width:240px;
+	  height:25px;
+	  font-size:15px;
+	  padding-top:5px;
+	  background-color:rgb(155,155,155);
+	}
+	.evaluate-center>h5,
+	.evaluate-right>h5{
+	  width:470px;height:25px;
+	}
+	.evaluate-left>h5>p,
+	.evaluate-center>h5>p,
+	.evaluate-right>h5>p{
+	  float:right;
+	  width:17px;
+	  height:17px;
+	  text-align:center;
+	  line-height:17px;
+	  margin-right:13px;
+	  border-radius:50%;
+	  color:rgb(150,150,150);
+	  background-color:#fff;
+	}
+	.evaluate-left>a{
+	  text-decoration:none;
+	  font-size:13px;
+	  color:rgb(100,100,100);
+	}
+	.evaluate-left>a>ul>li{
+	  display:inline-block;
+	  padding-top:23px;
+	  margin-left:13px;
+	}
+	.evaluate-center,
+	.evaluate-right{
+	  width:470px;height:292px;
+	  margin-left:10px;
+	  background-color:#f2f2f2;
+	}
+	.evaluate-center>ul>li{
+	  display:inline-block;
+	  width:440px;height:57px;
+	  margin-left:10px;
+	  border-bottom:1px solid #e2e2e2;
+      padding:15px 10px;
+	}
+	.evaluate-center>ul>li>a{
+	  display:inline-block;  
+	  float:left;
+	  width:50px;height:57px;
+	  color:#737373;
+	  font-size:12px;
+	  text-decoration:none;
+	}
+	.evaluate-center>ul>li>a>img{
+	  width:40px;height:40px;
+	  margin-bottom:3px;
+	  vertical-align:middle;
+	}
+	.evaluate-center>ul>li>span{
+	  display:inline-block;
+	  width:350px;
+	  height:23px;
+	  margin-left:20px;
+	}
+	.evaluate-center>ul>li>span>i{
+	  display:inline-block;
+	  width:70px;height:16px;
+	  font-style:normal;
+	  background:url(img/common_z.png) no-repeat 0 -352px;
+	}
+    .evaluate-center>ul>li>span>b{
+	  font-weight: normal;
+      font-size: 12px;
+      color: #737373;
+      float: right;
+	}
+	.evaluate-center>ul>li>a:last-child{
+	  display: inline-block;
+      width: 250px;
+      height: 35px;
+      margin-left: 20px;
+	}
+    .evaluate-right>a>ul{
+	  float:left;
+      margin-left:25px;
+	}
+	.evaluate-right>a>ul>li{
+	  font-size:13px;
+	  color:rgb(100,100,100);
+	  padding:13px 5px;
+	}
+	.evaluate-right>a>ul>li:hover,
+	.evaluate-left>a>ul>li:hover{
+	  color:rgb(255,106,0);
 	}
 	</style>
  </head>
@@ -302,14 +521,14 @@
 			  <ul>
 				  <li>
 				    <a href="#">
-             	<img src="img/9010011.jpg_220x240.jpg" alt="">
+             	     <img src="img/9010011.jpg_220x240.jpg" alt="">
 						  <p>鲜花·一心一意<p>
 						  <p>￥126</p>
 					  </a>
 				  </li>
 				  <li>
 				    <a href="#">
-              <img src="img/9012011.jpg_220x240.jpg" alt="">
+                <img src="img/9012011.jpg_220x240.jpg" alt="">
 						  <p>鲜花·阳光海岸<p>
 						  <p>￥218</p>
 					  </a>
@@ -368,80 +587,253 @@
 		    <p> 一起品味甜蜜时光 </p>
 	    </div>  
     	<div class="cake-city">
-		  <p>当前城市：</p>
-		  <a href="#">请选择 ▽</a>
-		  <p>【请选择蛋糕配送城市】</p>
+		    <p>当前城市：</p>
+		    <a href="#">请选择 ▽</a>
+		    <p>【请选择蛋糕配送城市】</p>
     	  <div class="cake-hidden">
-	      <p>请选择或输入蛋糕要配送的城市</p>
-	      <p>热门城市</p> 
-	      <a href="#">
-	      <table>
-	        <tr>
-	    	  <td>北京</td>
-	    	  <td>上海</td>
-	    	  <td>深圳</td>
-	    	  <td>广州</td>
-	    	  <td>天津</td>
-	        </tr>
-	        <tr>
-	    	  <td>重庆</td>
-	    	  <td>成都</td>
-	    	  <td>沈阳</td>
-	    	  <td>武汉</td>
-	    	  <td>西安</td>
-	        </tr>
-	        <tr>
-	    	  <td>杭州</td>
-	    	  <td>南京</td>
-	    	  <td>合肥</td>
-	    	  <td>郑州</td>
-	    	  <td>长沙</td>
-	        </tr>
-	        <tr>
-	    	  <td>南昌</td>
-	    	  <td>哈尔滨</td>
-	    	  <td>苏州</td>
-	    	  <td>长春</td>
-	    	 <td>宁波</td>
-	        </tr>
-	        <tr>
-	    	  <td>青岛</td>
-	    	  <td>济南</td>
-	    	  <td>厦门</td>
-	    	  <td>福州</td>
-	    	  <td>昆明</td>
-	        </tr>
-	        <tr>
-	    	  <td>贵阳</td>
-	    	  <td>南宁</td>
-	    	  <td>石家庄</td>
-	    	  <td>海口</td>
-	    	  <td>太原</td>
-	        </tr>
-	        <tr>
-	    	  <td>兰州</td>
-	    	  <td>乌鲁木齐</td>
-	    	  <td>唐山</td>
-	    	  <td>呼和浩特</td>
-	    	  <td>东莞</td>
-	        </tr>
-	        <tr>
-	    	  <td>佛山</td>
-	    	  <td>无锡</td>
-	    	  <td>宁波</td>
-	    	  <td>温州</td>
-	    	  <td>常州</td>
-	        </tr>
-	      </table>
+	        <p>请选择或输入蛋糕要配送的城市</p>
+	        <p>热门城市</p> 
+	        <a href="#">
+	          <table>
+	          <tr>
+	    	    <td>北京</td>
+	    	    <td>上海</td>
+	    	    <td>深圳</td>
+	    	    <td>广州</td>
+	    	    <td>天津</td>
+	          </tr>
+	          <tr>
+	    	    <td>重庆</td>
+	    	    <td>成都</td>
+	    	    <td>沈阳</td>
+	    	    <td>武汉</td>
+	    	    <td>西安</td>
+	          </tr>
+	          <tr>
+	    	    <td>杭州</td>
+	    	    <td>南京</td>
+	    	    <td>合肥</td>
+	    	    <td>郑州</td>
+	    	    <td>长沙</td>
+	          </tr>
+	          <tr>
+	    	    <td>南昌</td>
+	    	    <td>哈尔滨</td>
+	    	    <td>苏州</td>
+	    	    <td>长春</td>
+	    	    <td>宁波</td>
+	          </tr>
+	          <tr>
+	    	    <td>青岛</td>
+	    	    <td>济南</td>
+	    	    <td>厦门</td>
+	    	    <td>福州</td>
+	    	    <td>昆明</td>
+	          </tr>
+	          <tr>
+	    	    <td>贵阳</td>
+	    	    <td>南宁</td>
+	    	    <td>石家庄</td>
+	    	    <td>海口</td>
+	    	    <td>太原</td>
+	          </tr>
+	          <tr>
+	    	    <td>兰州</td>
+	    	    <td>乌鲁木齐</td>
+	    	    <td>唐山</td>
+	    	    <td>呼和浩特</td>
+	    	    <td>东莞</td>
+	          </tr>
+	          <tr>
+	    	    <td>佛山</td>
+	    	    <td>无锡</td>
+	    	    <td>宁波</td>
+	    	    <td>温州</td>
+	    	    <td>常州</td>
+	          </tr>
+	        </table>
 	      </a>
           <input type="text" placeholder="请输入配送城市">
 		</div>
 		</div>
         <div><a href="#">更多蛋糕>></a></div>
 	</div>
-	<div>
-	
-	</div>	
+	<div class="cake-img">
+	  <div class="cake-img-title">
+	       <a href="#">
+	      <img src="img/banner_cake.jpg" alt="">
+	   </a>
+	   <a href="#">蛋糕专区>> </a>
+	       <div class="cake-left-city">
+	     <span>
+		   <p>按城市选择蛋糕</p>
+		   <a href="#">北京</a>
+		   <a href="#">上海</a>
+		   <a href="#">深圳</a>
+		   <a href="#">广州</a>
+		   <a href="#">天津</a>
+		   <a href="#">重庆</a>
+		   <a href="#">成都</a>
+		   <a href="#">沈阳</a>
+		   <a href="#">武汉</a>
+		   <a href="#">西安</a>
+		   <a href="#">杭州</a>
+		   <a href="#">南京</a>
+		   <a href="#">苏州</a>
+		   <a href="#">更多</a>
+		 </span>
+		 <span>
+		   <p>蛋糕品牌</p>
+		   <a href="#">元祖蛋糕</a>
+		   <a href="#">INCAKE蛋糕</a>
+		   <a href="#">幸福西饼蛋糕</a>
+		   <a href="#">诺心蛋糕</a>
+		   <a href="#">窝夫小子蛋糕</a>
+		   <a href="#">Mcake蛋糕</a>
+		   <a href="#">司颂坊蛋糕</a>
+		   <a href="#">米卡米卡蛋糕</a>
+		   <a href="#">Vcake蛋糕</a>
+		   <a href="#">一品轩蛋糕</a>
+		   <a href="#">美滋每客蛋糕</a>
+		   <a href="#">贝思客蛋糕</a>
+		   <a href="#">BONCAKE</a>
+		   <a href="#">法西妮蛋糕</a>
+		   <a href="#">心之和蛋糕</a>
+		   <a href="#">全国蛋糕</a>
+		 </span>
+	   </div>
+	  </div>
+	   <div class="cake-jpg">
+	      <a href="#">
+		    <ul>
+		    	<li>
+				  <img src="img/5302016.jpg_220x240.jpg" alt="">
+	              <p>元祖蛋糕·田园晓美(8寸)</p>
+				  <p>￥218</p>
+				</li>
+				<li>
+				  <img src="img/5602016.jpg_220x240.jpg" alt="">
+	              <p>幸福西饼蛋糕·四重奏蛋糕(约2磅)</p>
+				  <p>￥198</p>
+				</li>
+				<li>
+				  <img src="img/5142026.jpg_220x240.jpg" alt="">
+	              <p>Mcake蛋糕·鲜莓印雪</p>
+				  <p>￥298</p>
+				</li>
+				<li>
+				  <img src="img/5131001.jpg_220x240.jpg" alt="">
+	              <p>贝思客蛋糕·PAPI熊蛋糕(1.2磅)</p>
+				  <p>￥188</p>
+				</li>
+		    </ul>
+		  </a>
+		  <a href="#">
+		    <ul>
+		    	<li>
+				  <img src="img/5171014.jpg_220x240.jpg" alt="">
+	              <p>INCAKE蛋糕·简爱(1.2磅)</p>
+				  <p>￥189</p>
+				</li>
+		    	<li>
+				  <img src="img/5182030.jpg_220x240.jpg" alt="">
+	              <p>BONCAKE蛋糕·小幸运(8寸)</p>
+				  <p>￥342</p>				
+				</li>
+		    	<li>
+				  <img src="img/5702045.jpg_220x240.jpg" alt="">
+	              <p>米卡米卡蛋糕·为你而来(1.5磅)</p>
+				  <p>￥287</p>   
+				</li>
+		    	<li>
+				  <img src="img/5902060.jpg_220x240.jpg" alt="">
+	              <p>诺心蛋糕·女神·冰淇淋蛋糕</p>
+				  <p>￥298</p>
+				</li>
+		    </ul>
+		  </a>
+	   </div>
+	</div> 
+	<div class="evaluate-title">
+      <div class="evaluate-left">
+	    <h5>感动瞬间
+		  <p>+</p>
+		</h5>
+	    <a href="#">
+		  <ul>
+		  	<li>花礼网用户故事 | 那些感动我们的</li>
+		  	<li>鲜花————见证跨越海峡的异地恋</li>
+		  	<li>你和恋人都是怎样确定关系的</li>
+		  	<li>超感动 | 花礼网用户真情告白故事</li>
+		  	<li>盘点花礼用户印象中最深刻的一次亲吻</li>
+		  	<li>希望你永远自由自在</li>
+		  </ul>
+		</a>
+	  </div>
+	  <div class="evaluate-center">
+	    <h5>最新评价
+		  <p>+</p>
+		</h5>
+        <ul>
+        	<li>
+			  <a href="#">
+			    <img src="img/9012219.jpg_80x87.jpg" alt="">			<span>237558*</span>
+			  </a>
+			  <span>
+			    <i></i>
+				<b>2017-10-27</b>
+			  </span>
+			  <br>
+			  <a href="#">内容：不错，挺好看，时间也准时</a>
+			</li>
+        	<li>
+			  <a href="#">
+			    <img src="img/9012033.jpg_80x87.jpg" alt="">			<span>537558*</span>
+			  </a>
+			  <span>
+			    <i></i>
+				<b>2017-10-27</b>
+			  </span>
+			  <br>
+			  <a href="#">内容：第一次购买，很满意，花的质量也不错</a>
+			</li>
+        	<li>
+			  <a href="#">
+			    <img src="img/9012141.jpg_80x87.jpg" alt="">			<span>837558*</span>
+			  </a>
+			  <span>
+			    <i></i>
+				<b>2017-10-27</b>
+			  </span>
+			  <br>
+			  <a href="#">内容：挺好看，时间也准时</a>
+			</li>
+        </ul>
+	  </div>
+	  <div class="evaluate-right">
+	    <h5> 热门资讯
+		  <P>+</P>
+		</h5>
+		<a href="#">
+		  <ul>
+			<li>12星座异地恋如何维持？送你一份</li>
+			<li>看十二生肖手滑如何反应?一图看出</li>
+			<li>送花的含义，生活中怎么送花？</li>
+			<li>送女朋友鲜花，送花卡片写什么？</li>
+			<li>唱反调的人更容易在一起？</li>
+			<li>异地恋有大招，教你不分手？</li>
+		  </ul>
+		  <ul>
+			<li>重阳节鲜花</li>
+			<li>鲜花枝数与其对应的含义</li>
+			<li>鲜花寓意，浪漫花语</li>
+			<li>通用送花祝福语-经典送花祝福语</li>
+			<li>送花的尝试与技巧</li>
+			<li>女孩子都喜欢别人送鲜花吗？</li>
+		  </ul>
+		</a>
+	  </div>
+	</div>
  </body> 
  </html> 
 
