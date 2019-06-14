@@ -2,25 +2,29 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-	  <style>
+	    <style>
 		  *{margin:0;padding:0;}
 			a{font-size:12px;color:#737373;
 			    text-decoration:none;
 			}
+			a:hover{
+			  color:rgb(255,106,0);
+			  text-decoration:normal;
+			}
 			b{color:#737373;}
-			div{width:1263px;height:77px;
+			div{width:1263px;height:17px;
 			  margin:10px auto;
 			}
-		  div>ul{
+		    div>ul{
 			  list-style:none;
 			  display:flex;
-				justify-content:center;
+			  justify-content:center;
 			}
 			div>ul>li>img{
 			  margin-right:4px;
 			}
 			div>ul>li>a{
-        margin:0px 25px;
+             margin:0px 25px;
 			}
 			div>p{
 			  font-size:12px;color:#737373;
@@ -28,57 +32,152 @@
 			}
 			.footer-down{
 			  width:1263px;height:17px;
+			  margin-top:40px;
 			}
+            .footer-help{
+			  width:1200px;height:212px;
+			  margin-top:40px;
+			  margin-bottom:40px;
+			  border-top:1px solid rgb(222,222,222);
+			  border-bottom:1px solid rgb(222,222,222);
+			  background-color:rgb(242,242,242);
+			}
+            .footer-help>ul,
+			.footer-help>ul>li>ul{
+			  float:left;
+			  list-style:none;
+			}
+            .footer-help>ul>li{
+			  width:291px;height:150px;
+			  margin-top:18px;
+			  border-left:1px solid rgb(222,222,222);
+			}
+			.footer-help>ul>li>ul>a>li{
+			  padding:5px 20px;
+			}
+			h4{padding-left:20px;}
 		</style>
  </head>
  <body>
     <div>
-		  <ul>
-		  	<li><a href="#">首页</a></li>
-				<b>|</b>
-				<li><a href="#">关于我们</a></li>
-				<b>|</b>
+	  <ul>
+		<li><a href="#">首页</a></li>
+			<b>|</b>
+		<li><a href="#">关于我们</a></li>
+			<b>|</b>
         <li><a href="#">媒体报道</a></li>
-				<b>|</b>
+			<b>|</b>
         <li><a href="#">联系方式</a></li>
-				<b>|</b>
-				<li><a href="#">企业团购</a></li>
-				<b>|</b>
-				<li><a href="#">友情链接</a></li>
-				<b>|</b>
-				<li><a href="#">在线补款</a></li>
-				<b>|</b>
-				<li><a href="#">为什么选择中国鲜花礼品网</a></li>
-		  </ul>
-		</div>
-		<div class="footer-img">
-		  <ul>
-			  <li><img src="img/cxwz.png" alt=""></li>
-				<li><img src="img/cxwz.gif" alt=""></li>
-				<li><img src="img/smyz.gif" alt=""></li>
-				<li><img src="img/slogan.png" alt=""></li>
-				<li><img src="img/zfb.gif" alt=""></li>
-				<li><img src="img/100.jpg" alt=""></li>
-				<li><img src="img/bico1.jpg" alt=""></li>
-				<li><img src="img/bico4.jpg" alt=""></li>
-				<li><img src="img/bico3.jpg" alt=""></li>
-			</ul>
-		</div>
+			<b>|</b>
+		<li><a href="#">企业团购</a></li>
+			<b>|</b>
+		<li><a href="#">友情链接</a></li>
+			<b>|</b>
+		<li><a href="#">在线补款</a></li>
+			<b>|</b>
+		<li><a href="#">为什么选择中国鲜花礼品网</a></li>
+	  </ul>
+	</div>
+	<div class="footer-help">
+	    <ul>
+	    	<li>    
+			  <h4>客户服务</h4>
+			    <ul>
+			    <a href="#">
+			  	  <li>服务声明</li>
+			  	  <li>境外支付</li>
+			  	  <li>配送范围</li>
+			  	  <li>取消订单</li>
+			  	  <li>隐私条款</li>
+				</a>
+			  </ul>
+			  <ul>
+			    <a href="#">
+			  	  <li>支付说明</li>
+			  	  <li>配送说明</li>
+			  	  <li>订单查询</li>
+			  	  <li>补交货款</li>
+			  	  <li>安全条款</li>
+				</a>
+			  </ul>
+			</li>
+	    	<li>
+			  <h4>热门咨询</h4>
+			    <ul>
+			    <a href="#">
+			  	  <li>中国鲜花礼品网购物流程</li>
+			  	  <li>中国鲜花礼品网订购演示</li>
+			  	  <li>鲜花王能配送那些城市？</li>
+			  	  <li>鲜花售后服务是怎么样的？</li>
+			  	  <li>我应该提前多久预定鲜花</li>
+				</a>
+			  </ul>
+			</li>
+	    	<li>
+			  <h4>同城鲜花专区</h4>
+			    <ul>
+			    <a href="#">
+			  	  <li>深圳鲜花</li>
+			  	  <li>上海鲜花</li>
+			  	  <li>天津鲜花</li>
+			  	  <li>成都鲜花</li>
+			  	  <li>武汉鲜花</li>
+				  <li>厦门鲜花</li>
+				</a>
+			  </ul>
+			  <ul>
+			    <a href="#">
+			  	  <li>北京鲜花</li>
+			  	  <li>广州鲜花</li>
+			  	  <li>重庆鲜花</li>
+			  	  <li>西安鲜花</li>
+			  	  <li>南京鲜花</li>
+			  	  <li>更多城市</li>
+				</a>
+			  </ul>
+			</li>
+	    	<li>
+			  <h4>联系我们</h4>
+			    <ul>
+				<a href="#">
+			  	  <li>全国订购热线：400-889-8188（免长途费）</li>
+			  	  <li>在线客服</li>
+			  	  <li>7x24小时在线订购</li>
+			  	  <li>客服工作时间：8:30-21:00</li>
+			  	  <li>E-mail:kefu@hua.com</li>
+				</a>
+			  </ul>
+			</li>
+	    </ul>
+	</div>
+	<div class="footer-img">
+		<ul>
+			<li><img src="img/cxwz.png" alt=""></li>
+			<li><img src="img/cxwz.gif" alt=""></li>
+			<li><img src="img/smyz.gif" alt=""></li>
+			<li><img src="img/slogan.png" alt=""></li>
+			<li><img src="img/zfb.gif" alt=""></li>
+			<li><img src="img/100.jpg" alt=""></li>
+			<li><img src="img/bico1.jpg" alt=""></li>
+			<li><img src="img/bico4.jpg" alt=""></li>
+			<li><img src="img/bico3.jpg" alt=""></li>
+		</ul>
+	</div>
     <div class="footer-down">
-		  <p>
-			  <a href="#">中国花卉协会会员</a>
-				<a href="#">中国电子商务协会会员
+		<p>
+			<a href="#">中国花卉协会会员</a>
+			<a href="#">中国电子商务协会会员
 				ICP经营许可证：</a><a href="#">粤B2-20050744</a>
-				<b>|</b>
-				<a href="#"> 粤ICP备09171662号 </a>
-				<img src="img/beian.png" alt="">
+			<b>|</b>
+			<a href="#"> 粤ICP备09171662号 </a>
+			<img src="img/beian.png" alt="">
 				粤公网安备44030502000373号  Copyright © 2005-2017
-			</p>
-		</div>
-		<div class="footer-down">
-		  <p>
-			  花礼网 （中国鲜花礼品网） <a href="#">www.hua.com</a> 深圳市百易信息技术有限公司 中国鲜花网领先品牌，鲜花速递专家
-			</p>
-		</div>
+		</p>
+	</div>
+	<div class="footer-down">
+		<p>
+			花礼网 （中国鲜花礼品网） <a href="#">www.hua.com</a> 深圳市百易信息技术有限公司 中国鲜花网领先品牌，鲜花速递专家
+		</p>
+	</div>
  </body>
 </html>
