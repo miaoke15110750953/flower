@@ -1,0 +1,31 @@
+#nav1{
+    height:40px;
+    width:1200px;
+    background-color:#FE7A24;
+    margin:0 auto;
+    margin-bottom:5px;
+}
+#nav1>#nav-list{
+   display:flex;
+   justify-content:space-between;
+   line-height:40px;
+}
+#nav1>#nav-list>li:first-child{
+   margin-left:20px;
+   display:flex;
+}
+#nav1>#nav-list>li:last-child{
+   margin-right:20px;
+}
+#nav1>#nav-list>li:first-child>a>span{
+   display:flex;
+   width:20px;
+   height:20px;
+   background:url("../img/bottom_ar.png") no-repeat;
+   background-size:contain;
+   margin-top:14px;
+   margin-left:30px;
+} 
+#nav1>#nav-list>li>a{
+   font-size:15px;
+}

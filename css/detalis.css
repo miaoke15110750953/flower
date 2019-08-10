@@ -1,0 +1,62 @@
+
+#detalis-title{
+    height:80px;
+    width:1200px;
+    margin:0 auto;
+    background:url("../img/flower/cszq_banner.jpg") no-repeat ;
+    background-size:100% 100%;
+}
+.detalis-title-list{
+    display:flex;
+    margin-left:20px;
+    line-height:80px;
+}
+.detalis-title-list>li{width:80px;}
+.detalis-title-list>li>a{font-size:20px;}
+#detalis-img{
+    width:1200px;
+    margin:0 auto;
+}
+#detalis-img-list{
+    display:flex;
+    flex-flow:wrap;
+    justify-content:space-between;
+}
+#detalis-img-list>li{
+    width:235px;
+    margin-top:2px;
+    overflow:hidden;
+    padding:1px;
+    margin-bottom:10px;
+}
+#detalis-img-list>li:hover{
+    border:1px solid #ccc;
+    padding:0px;
+}
+#detalis-img-list>li>a>img{
+    width:239px;
+    transition:transform 2s;
+    
+}
+#detalis-img-list>li>a>img:hover{
+    transform:scale(1.1);  
+}
+#detalis-img-list>li>a+a{
+   display:block;
+   text-align:center;
+   padding-bottom:10px;
+}
+#detalis-shouc{
+    margin-left:15px;
+}
+#detalis-shouc>a{
+    display:inline-block;
+    width:100px;
+    height:25px;
+    border:1px solid #ccc;
+    text-align:center;
+    line-height:25px;
+}
+#detalis-shouc>a>img{
+    width:14px;margin-right:10px;
+}
