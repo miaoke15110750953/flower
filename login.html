@@ -6,19 +6,30 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
+  <link rel="stylesheet" href="css/login.css">
   <title>Document</title>
-  <style>
-    div{
-	  width:1263px;
-	  height:488px;
-	  margin:0 auto;
-	  background:url(img/login_bg.jpg) no-repeat -325px 0px;
-	}
-  </style>
  </head>
  <body>
-  <div>
-    
+   <div id="header"></div>
+  <div id="login">
+    <div class="login">
+      <div>
+        <a href="#">登录</a>
+        <a href="#">新用户注册</a>
+      </div>
+      <input type="text" placeholder="请输入您要注册的账号">
+      <input type="text" placeholder="请输入6-12位由字母数字组成的密码">
+      <input type="text" placeholder="请再次输入确认密码">
+      <div>
+         <input type="text" placeholder="请输入验证码">
+
+      </div>
+      <a href="#">立即注册</a>
+    </div>
   </div>
+  <div id="footer"></div>
+  <script src="js/ajax.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
  </body>
 </html>
